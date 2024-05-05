@@ -4,103 +4,6 @@ INPUT /usr/local/texlive/2023/texmf-dist/web2c/texmf.cnf
 INPUT /usr/local/texlive/2023/texmf-var/web2c/pdftex/pdflatex.fmt
 INPUT /Users/slavapan/Projects/quantumbreak/SRP/text.tex
 OUTPUT text.log
-<<<<<<< HEAD
-INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
-INPUT C:\Program Files\MiKTeX\tex\latex\base\article.cls
-INPUT C:\Program Files\MiKTeX\tex\latex\base\size10.clo
-INPUT C:\Program Files\MiKTeX\tex\latex\base\size10.clo
-INPUT C:\Program Files\MiKTeX\tex\latex\base\size10.clo
-INPUT C:\Program Files\MiKTeX\tex\latex\physics\physics.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\physics\physics.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\l3packages\xparse\xparse.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\l3kernel\expl3.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\l3kernel\expl3.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\Program Files\MiKTeX\tex\latex\l3backend\l3backend-pdftex.def
-INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsmath.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amstext.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amstext.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsgen.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsbsy.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsbsy.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\amsmath\amsopn.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\babel\babel.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\babel\babel.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\babel\txtbabel.def
-INPUT C:\Program Files\MiKTeX\tex\latex\arabi\bblopts.cfg
-INPUT C:\Program Files\MiKTeX\tex\latex\arabi\bblopts.cfg
-INPUT C:\Program Files\MiKTeX\tex\latex\arabi\bblopts.cfg
-INPUT C:\Program Files\MiKTeX\tex\latex\babel-english\english.ldf
-INPUT C:\Program Files\MiKTeX\tex\latex\babel-english\english.ldf
-INPUT C:\Program Files\MiKTeX\tex\latex\babel-english\english.ldf
-INPUT C:\Program Files\MiKTeX\tex\latex\babel-russian\russianb.ldf
-INPUT C:\Program Files\MiKTeX\tex\latex\babel-russian\russianb.ldf
-INPUT C:\Program Files\MiKTeX\tex\latex\babel-russian\russianb.ldf
-INPUT C:\Program Files\MiKTeX\tex\latex\cyrillic\t2aenc.def
-INPUT C:\Program Files\MiKTeX\tex\latex\base\t2aenc.dfu
-INPUT C:\Program Files\MiKTeX\tex\latex\base\t2aenc.dfu
-INPUT C:\Program Files\MiKTeX\tex\latex\base\t2aenc.dfu
-INPUT C:\Program Files\MiKTeX\tex\generic\babel\locale\ru\babel-russian.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\babel\locale\ru\babel-russian.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\babel\locale\ru\babel-russian.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\babel\locale\ru\babel-ru.ini
-INPUT C:\Program Files\MiKTeX\tex\generic\babel\locale\en\babel-english.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\babel\locale\en\babel-english.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\babel\locale\en\babel-english.tex
-INPUT C:\Program Files\MiKTeX\tex\generic\babel\locale\en\babel-en.ini
-INPUT C:\Program Files\MiKTeX\tex\latex\base\inputenc.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\base\inputenc.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\ucs\utf8x.def
-INPUT C:\Program Files\MiKTeX\tex\latex\ucs\utf8x.def
-INPUT C:\Program Files\MiKTeX\tex\latex\ucs\utf8x.def
-INPUT C:\Program Files\MiKTeX\tex\latex\base\utf8.def
-INPUT C:\Program Files\MiKTeX\tex\latex\base\omsenc.dfu
-INPUT C:\Program Files\MiKTeX\tex\latex\base\omsenc.dfu
-INPUT C:\Program Files\MiKTeX\tex\latex\base\omsenc.dfu
-INPUT C:\Program Files\MiKTeX\tex\latex\base\ot1enc.dfu
-INPUT C:\Program Files\MiKTeX\tex\latex\base\ot1enc.dfu
-INPUT C:\Program Files\MiKTeX\tex\latex\base\ot1enc.dfu
-INPUT C:\Program Files\MiKTeX\tex\latex\base\t1enc.dfu
-INPUT C:\Program Files\MiKTeX\tex\latex\base\t1enc.dfu
-INPUT C:\Program Files\MiKTeX\tex\latex\base\t1enc.dfu
-INPUT C:\Program Files\MiKTeX\tex\latex\base\ts1enc.dfu
-INPUT C:\Program Files\MiKTeX\tex\latex\base\ts1enc.dfu
-INPUT C:\Program Files\MiKTeX\tex\latex\base\ts1enc.dfu
-INPUT C:\Program Files\MiKTeX\tex\latex\base\t2aenc.dfu
-INPUT C:\Program Files\MiKTeX\tex\latex\base\t2aenc.dfu
-INPUT C:\Program Files\MiKTeX\tex\latex\base\t2aenc.dfu
-INPUT C:\Program Files\MiKTeX\tex\latex\jknappen\mathrsfs.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\jknappen\mathrsfs.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\geometry\geometry.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\keyval.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\iftex\ifvtex.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Program Files\MiKTeX\tex\generic\iftex\iftex.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\geometry\geometry.cfg
-INPUT C:\Program Files\MiKTeX\tex\latex\geometry\geometry.cfg
-INPUT C:\Program Files\MiKTeX\tex\latex\geometry\geometry.cfg
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphicx.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\graphics.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics\trig.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics-cfg\graphics.cfg
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT C:\Program Files\MiKTeX\tex\latex\graphics-def\pdftex.def
-INPUT .\text.aux
-INPUT .\text.aux
-=======
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/base/article.cls
@@ -348,8 +251,49 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
 INPUT /usr/local/texlive/2023/texmf-dist/tex/generic/iftex/iftex.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/keyval.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/pdftex.def
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/pdftex.def
 INPUT ./text.aux
->>>>>>> eb1d89c966b8765ee690b4f32be70c384eed6533
 INPUT text.aux
 INPUT text.aux
 INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/cyrillic/t2acmr.fd
@@ -359,54 +303,25 @@ INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/map/fontname/texfonts.map
 INPUT /Users/slavapan/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/larm1000.tfm
 OUTPUT text.aux
-<<<<<<< HEAD
-INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
-INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
-INPUT C:\Program Files\MiKTeX\tex\context\base\mkii\supp-pdf.mkii
-INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\epstopdf-pkg\epstopdf-base.sty
-INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT C:\Program Files\MiKTeX\tex\latex\00miktex\epstopdf-sys.cfg
-INPUT C:\Users\vyachessloveee\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm1728.tfm
-INPUT C:\Users\vyachessloveee\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm1200.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr12.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr8.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr6.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi12.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi8.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi6.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy8.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy6.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmex10.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex8.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Program Files\MiKTeX\tex\latex\jknappen\ursfs.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\jknappen\ursfs.fd
-INPUT C:\Program Files\MiKTeX\tex\latex\jknappen\ursfs.fd
-INPUT C:\Users\vyachessloveee\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
-INPUT C:\Users\vyachessloveee\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
-INPUT C:\Users\vyachessloveee\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs5.tfm
-INPUT C:\Users\vyachessloveee\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm0900.tfm
-INPUT C:\Users\vyachessloveee\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\labx0900.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmr9.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmmi9.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\cm\cmsy9.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex9.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Users\vyachessloveee\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
-INPUT C:\Users\vyachessloveee\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs5.tfm
-INPUT C:\Users\vyachessloveee\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm0600.tfm
-INPUT C:\Users\vyachessloveee\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm0800.tfm
-INPUT C:\Users\vyachessloveee\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm1440.tfm
-INPUT C:\Users\vyachessloveee\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\labx1440.tfm
-INPUT C:\Users\vyachessloveee\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\lati1000.tfm
-INPUT C:\Program Files\MiKTeX\fonts\tfm\public\amsfonts\cmextra\cmex7.tfm
-INPUT C:\Users\vyachessloveee\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs10.tfm
-INPUT C:\Users\vyachessloveee\AppData\Local\MiKTeX\fonts\tfm\public\rsfs\rsfs7.tfm
-INPUT C:\Users\vyachessloveee\AppData\Local\MiKTeX\fonts\tfm\lh\lh-t2a\larm0700.tfm
-=======
+INPUT /usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+INPUT /usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 INPUT /Users/slavapan/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/larm1728.tfm
 INPUT /Users/slavapan/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/larm1200.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/cm/cmr12.tfm
@@ -446,7 +361,6 @@ INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/amsfonts/cmextra/cmex7
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/rsfs/rsfs10.tfm
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/tfm/public/rsfs/rsfs7.tfm
 INPUT /Users/slavapan/Library/texlive/2023/texmf-var/fonts/tfm/lh/lh-t2a/larm0700.tfm
->>>>>>> eb1d89c966b8765ee690b4f32be70c384eed6533
 OUTPUT text.pdf
 INPUT /usr/local/texlive/2023/texmf-var/fonts/map/pdftex/updmap/pdftex.map
 INPUT /usr/local/texlive/2023/texmf-dist/fonts/enc/dvips/cm-super/cm-super-t2a.enc

@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 24.1) (preloaded format=pdflatex 2024.4.26)  28 APR 2024 22:58
-=======
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.9)  28 APR 2024 23:13
->>>>>>> eb1d89c966b8765ee690b4f32be70c384eed6533
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2023.9.9)  2 MAY 2024 21:37
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1012,28 +1008,23 @@ Package: iftex 2022/02/03 v1.0f TeX engine tests
 \Gm@layoutheight=\dimen156
 \Gm@layouthoffset=\dimen157
 \Gm@layoutvoffset=\dimen158
-<<<<<<< HEAD
-\Gm@dimlist=\toks25
- (C:\Program Files\MiKTeX\tex/latex/geometry\geometry.cfg)) (C:\Program Files\MiKTeX\tex/latex/graphics\graphicx.sty
+\Gm@dimlist=\toks24
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphicx.sty
 Package: graphicx 2021/09/16 v1.2d Enhanced LaTeX Graphics (DPC,SPQR)
- (C:\Program Files\MiKTeX\tex/latex/graphics\graphics.sty
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/graphics.sty
 Package: graphics 2022/03/10 v1.4e Standard LaTeX Graphics (DPC,SPQR)
- (C:\Program Files\MiKTeX\tex/latex/graphics\trig.sty
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics/trig.sty
 Package: trig 2021/08/11 v1.11 sin cos tan (DPC)
-) (C:\Program Files\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
 File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
 )
 Package graphics Info: Driver file: pdftex.def on input line 107.
- (C:\Program Files\MiKTeX\tex/latex/graphics-def\pdftex.def
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/graphics-def/pdftex.def
 File: pdftex.def 2022/09/22 v1.2b Graphics/color driver for pdftex
 ))
 \Gin@req@height=\dimen159
 \Gin@req@width=\dimen160
-) (text.aux
-=======
-\Gm@dimlist=\toks24
 ) (./text.aux
->>>>>>> eb1d89c966b8765ee690b4f32be70c384eed6533
 LaTeX Font Info:    Trying to load font information for T2A+cmr on input line 5.
  (/usr/local/texlive/2023/texmf-dist/tex/latex/cyrillic/t2acmr.fd
 File: t2acmr.fd 2001/08/11 v1.0a Computer Modern Cyrillic font definitions
@@ -1105,32 +1096,27 @@ LaTeX Info: Redefining \th on input line 18.
 * \@reversemarginfalse
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
-<<<<<<< HEAD
-(C:\Program Files\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+(/usr/local/texlive/2023/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count279
+\scratchcounter=\count277
 \scratchdimen=\dimen161
 \scratchbox=\box54
-\nofMPsegments=\count280
-\nofMParguments=\count281
-\everyMPshowfont=\toks26
-\MPscratchCnt=\count282
+\nofMPsegments=\count278
+\nofMParguments=\count279
+\everyMPshowfont=\toks25
+\MPscratchCnt=\count280
 \MPscratchDim=\dimen162
-\MPnumerator=\count283
-\makeMPintoPDFobject=\count284
-\everyMPtoPDFconversion=\toks27
-) (C:\Program Files\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+\MPnumerator=\count281
+\makeMPintoPDFobject=\count282
+\everyMPtoPDFconversion=\toks26
+) (/usr/local/texlive/2023/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
- (C:\Program Files\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
-File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
 LaTeX Font Info:    Trying to load font information for U+rsfs on input line 19.
- (C:\Program Files\MiKTeX\tex/latex/jknappen\ursfs.fd
-=======
-LaTeX Font Info:    Trying to load font information for U+rsfs on input line 18.
-(/usr/local/texlive/2023/texmf-dist/tex/latex/jknapltx/ursfs.fd
->>>>>>> eb1d89c966b8765ee690b4f32be70c384eed6533
+ (/usr/local/texlive/2023/texmf-dist/tex/latex/jknapltx/ursfs.fd
 File: ursfs.fd 1998/03/24 rsfs font definition file (jk)
 )
 Underfull \hbox (badness 10000) in paragraph at lines 40--52
@@ -1143,7 +1129,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 40--52
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 71--78
+Underfull \hbox (badness 10000) in paragraph at lines 71--84
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 71--84
 
  []
 
@@ -1155,23 +1146,15 @@ LaTeX Warning: There were multiply-defined labels.
 
  ) 
 Here is how much of TeX's memory you used:
-<<<<<<< HEAD
- 5108 strings out of 474485
- 75847 string characters out of 5753522
- 1936542 words of memory out of 5000000
- 27311 multiletter control sequences out of 15000+600000
- 573160 words of font info for 72 fonts, out of 8000000 for 9000
-=======
- 4252 strings out of 476025
- 63953 string characters out of 5790018
- 1861388 words of memory out of 5000000
- 24653 multiletter control sequences out of 15000+600000
+ 5056 strings out of 476025
+ 76157 string characters out of 5790018
+ 1862388 words of memory out of 5000000
+ 25427 multiletter control sequences out of 15000+600000
  527378 words of font info for 68 fonts, out of 8000000 for 9000
->>>>>>> eb1d89c966b8765ee690b4f32be70c384eed6533
  1141 hyphenation exceptions out of 8191
  72i,8n,77p,388b,298s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cmextra/cmex9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmr9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy6.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy9.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/rsfs/rsfs10.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfbx1440.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0600.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0700.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0800.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm0900.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1000.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1200.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfrm1728.pfb></usr/local/texlive/2023/texmf-dist/fonts/type1/public/cm-super/sfti1000.pfb>
-Output written on text.pdf (2 pages, 272613 bytes).
+Output written on text.pdf (2 pages, 279993 bytes).
 PDF statistics:
  127 PDF objects out of 1000 (max. 8388607)
  76 compressed objects within 1 object stream
