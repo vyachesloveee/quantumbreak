@@ -31,7 +31,7 @@
         (\ref{link name}), рассматривоемое в данной работе, является уравнением матрицы плотности, описывающим ее эволюцию.
 
         \begin{equation}\label{link name}
-            \partial_t \rho = -\frac{i}{\hbar} [H,\rho] + \sum_i \gamma_i ( L_{i} \rho L^{\dagger} - \frac{1}{2} [L_{i}^{\dagger} L_i , \rho]) 
+            \partial_t \hat{\rho} = -\frac{i}{\hbar} [\hat{H},\hat{\rho}] + \sum_i \gamma_i ( L_{i} \rho L^{\dagger} - \frac{1}{2} [L_{i}^{\dagger} L_i , \hat{\rho}]) 
         \end{equation}
 
     \end{abstract}
@@ -65,7 +65,7 @@
         плотности) и задается как
 
         \begin{equation}\label{link name}
-            \rho = \sum_i p_i \ket{\psi_i} \bra{\psi_i}
+            \hat{\rho} = \sum_i p_i \ket{\psi_i} \bra{\psi_i}
         \end{equation}
 
         где $p_i$ является вероятностью нахождения состояния $\psi_i$, а $\ket{\psi_i}\bra{\psi_i}$ --- соответствующий оператор проекции.
@@ -102,9 +102,18 @@
         \\
 
         \begin{equation}
-            \frac{d}{dt} \ket{\psi(t)} = -i \hbar H \ket{\psi(t)}
+            \frac{d}{dt} \ket{\psi(t)} = -i \hbar \hat{H} \ket{\psi(t)}
+        \end{equation}
+        \\
+
+        Если нам известно, что в точке t = 0 система находится в состоянии $\ket{\psi(0)}$, то переходя в систему единиц измерения, в которой $\hbar = 1$, формальное решение уравнения Шредингера можно представить в виде:
+        \\
+        \begin{equation}
+            \ket{\psi(t)} = e^{-i\hat{H}t} \ket{\psi(0)}
         \end{equation}
 
+        \begin{itshape}
+            Постулат 4. Пространство состояний составной системы
+        \end{itshape}
         
     \end{document}
-aaaaa
