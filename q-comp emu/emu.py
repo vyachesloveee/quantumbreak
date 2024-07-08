@@ -75,9 +75,13 @@ def observe(v):
   return 
 
 #тест
-
+'''
 a = np.kron(up, up)
 a = apply(a, H(), I())
 a = apply(a, H(), I())
 print(a)
 observe(a)
+'''
+
+a = '0 0 0'
+print(a.split())
