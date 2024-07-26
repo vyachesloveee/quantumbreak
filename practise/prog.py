@@ -3,11 +3,12 @@ from tkinter import *
 from tkinter import filedialog as fd 
 from tkinter import messagebox as mb
 from tkinter import Tk, ttk
+import re
 
 row = 1
 col = 0
 i = 0
-
+ 
 class Window:
     #создание окна
     def __init__(self):
@@ -21,8 +22,13 @@ class Window:
         self.draw_menu()
         self.callback()
         self.root.mainloop()
+
+    def enter():
+        mass = Tk.Entry(self.root, bd = 2)
+        mass.place(x = 50, y = 10, width = 90)
         
     #создание меню
+    '''
     def draw_menu(self):
         menu_bar = Menu(self.root)
         file_menu = Menu(menu_bar)
@@ -31,14 +37,14 @@ class Window:
         file_menu.add_command(label = 'Выйти', command= self.exit)
         menu_bar.add_cascade(label = 'Файл', menu = file_menu)
         self.root.configure(menu = menu_bar)
-    
+    '''
     def exit(self):
         choice = mb.askyesno('Выход', 'Вы действительно хотите выйти?')
         if choice:
             self.root.destroy()
 
     def callback(self):
-        name= fd.askopenfilename()
+        name = fd.askopenfilename()
         print(name)
         return name
 
@@ -52,60 +58,33 @@ workbook = xlsxwriter.Workbook(temp_path +'cv.xlsx')
 worksheet = workbook.add_worksheet()
 start_line_number = 0
 
-
-class File:
-    def __init__(self, name: str, counter):
-        self.filename = name
-        self.counter = counter
-    
-    def __enter__(self):
-        with open(self.filename) as file:
-            for i in range(self.counter + 1):
-                self.line = file.readline()
-        return self.line
-
-    def __exit__(self, exc_type, exc_val, exc_tb):
-        return self
-
-for i in range(20):        
-    with File(path, i) as file:
-        line = file
-        print(line)
-
-
 #Считывание файла, определение типа работы
 class Calculations:
-    def __init__(self):
+    def __init__(self, inline):
+        self.line = inline
+        self.values = 0
         pass
-        
-    def work_mode(self, path):
-        with open(path, 'r') as file:
-            while True:
-                line = file.readline()
-                if 'Тип работы:' in line:
-                    work_mode = line[12:]
-                    print(line[12:])
-                    break
-        return work_mode; 
 
+    def work_mode(self):
+        flag = 0
+        if "Тип работы" in self.line:
+            flag = 1
+        return self.line[12:], flag
+    
     def sweep_rate(self):
-        while True:
-            line = file.readline() #print
-            print(line)
-            if 'Скорость развертки:' in line:
-                sweep_rate = line[20:-6]
-                if ',' in sweep_rate:
-                    sweep_rate = sweep_rate.replace(',', '.')
-                sweep_rate = float(sweep_rate)
-            if 'Время,' in line:
-                break
-        return sweep_rate
-        
-    def calculus(self, average_m, voltage, sweep_rate, ):
-        return 0
+        if 'Скорость развертки:' in self.line:
+            if ',' in self.line:
+                self.line = self.line.replace(',', '.')
+            self.line = re.sub("\D", "", self.line)
+            self.values = float(self.line)
+        return self.values
 
-    def scroll(self):
-        return 0
+    def current(self):
+        while "Время," not in self.line:
+            print(file.readline())
+        values = self.line.split()
+        specific_current = values[2]/ average_m
+        values.append(specific_current)
 
     #подсчет средней массы
     def input_values(self, mass1 = 0.0128, mass2 = 0.0128, voltage = 0.8):
@@ -114,38 +93,39 @@ class Calculations:
         return average_m, voltage
 
 
-
-
-'''
-for i in range(2):
-    print("Введите массу электрода", i+1)
-    input_value = input()
-    if ',' in input_value:
-        input_value = input_value.replace(',', '.')
-    average_m = average_m + float(input_value)/2
-#Ввод рабочего напряжения
-print('Введите рабочее напряжение в милливольтах')
-input_value = input()
-if ',' in input_value:
-        input_value = input_value.replace(',', '.')
-voltage = input_value/1000
-'''
-
-
-
-
 temp_array = [0, 0, 0, 0, 0]
 sum_capacity = 0
 
-calculations = Calculations()
-mode = calculations.work_mode(temp_path)
-print (mode)
-calculations.sweep_rate()
 
-#запись данных
 with open(path, 'r') as file:
+    flag = 0
+    while flag == 0:
+        line = file.readline()
+        calc = Calculations(line)
+        mode = calc.work_mode()[0]
+        flag = calc.work_mode()[1]
+    print(mode)
+
     while True:
-        
+        #Промотка до нужной строки
+        while True:
+            line = file.readline()
+            if 'Скорость развертки:' in line:
+                if ',' in line:
+                    line = line.replace(',', '.')
+                for i in line.split():
+                    try:
+                        #trying to convert i to float
+                        sweep_rate = float(i)
+                        #break the loop if i is the first string that's successfully converted
+                        break
+                    except:
+                        continue
+                print(sweep_rate)
+
+            if "Время," in line:
+                break
+
         #чтение и запись строк
         while True:
             line1 = file.readline()
@@ -159,7 +139,7 @@ with open(path, 'r') as file:
 #подсчет среднего тока
             if len(values)  < 3:
                 break
-            specific_current = values[2]/ average_m
+            specific_current = values[2]/ calc.input_values()[0]
             values.append(specific_current)
 #подсчет удельной емкости
             specific_capacity = values[3] * 2 / sweep_rate
@@ -173,9 +153,13 @@ with open(path, 'r') as file:
             for i in range(len(values)):
                 worksheet.write(row, col + i, values[i])
             row +=1
-        sum_capacity = sum_capacity/(2*voltage)
-        worksheet.write(0, col + 6, 'Суммарный заряд')
+        sum_capacity = sum_capacity/(2*calc.input_values()[1])
+        worksheet.write(0, col + 6, 'Ёмкость')
+        worksheet.write(2, col + 6, 'удельная ёмкость')
+        worksheet.write(3, col + 6, 2*sum_capacity/calc.input_values()[0])
         worksheet.write(1, col + 6, sum_capacity)
+        worksheet.write(4, col + 6, 'скорость развертки')
+        worksheet.write(5, col + 6, sweep_rate)
         worksheet.write(0, col, 'Время, с' )
         worksheet.write(0, col+1, 'Потенциал, В ' )
         worksheet.write(0, col+2, 'Ток, А' )
@@ -187,7 +171,6 @@ with open(path, 'r') as file:
 
         print(sum_capacity)
         raw = '1'
-
         '''
         print('Hit the enter button')
         while raw != '':
@@ -195,7 +178,6 @@ with open(path, 'r') as file:
             if raw != '':
                 print('try again')
         '''
-
         sum_capacity = 0
         temp_array = [0, 0, 0, 0, 0]
         start_line_number = 6
@@ -205,3 +187,5 @@ with open(path, 'r') as file:
             print('end')
             break    
 workbook.close()
+
+
