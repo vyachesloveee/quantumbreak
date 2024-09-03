@@ -152,9 +152,9 @@ with open(path, 'r') as file:
                 values[i] = float(values[i])
             values.extend([0,0,0])
             df.loc[len(df.index)] = values  
-            worksheet.write(j, col, df.loc[j, 'time'] )
-            worksheet.write(j, col+1, df.loc[j, 'potential'] )
-            worksheet.write(j, col+2, df.loc[j, 'current'] )
+            worksheet.write(row, col, df.loc[j, 'time'] )
+            worksheet.write(row, col+1, df.loc[j, 'potential'] )
+            worksheet.write(row, col+2, df.loc[j, 'current'] )
             if len(df) > 3:
                 if abs(df.loc[j-3, 'current'] - df.loc[j-2, 'current'] / df.loc[j-3, 'current']) > 0.30:
                     df.loc[j-2, 'current'] = (df.loc[j-3, 'current'] + df.loc[j, 'current'])/2
@@ -163,15 +163,15 @@ with open(path, 'r') as file:
             if values[3] !=0:
                 break
             df.loc[j, 'specific_current'] = df.loc[j, 'current']/ calc.input_values()[0]
-            worksheet.write(j, col+3, df.loc[j, 'specific_current'] )
+            worksheet.write(row, col+3, df.loc[j, 'specific_current'] )
 #подсчет удельной емкости
             df.loc[j, 'specific_capacity'] = df.loc[j, 'specific_current'] * 2 / sweep_rate
-            worksheet.write(j, col+4, df.loc[j, 'specific_capacity'] )
+            worksheet.write(row, col+4, df.loc[j, 'specific_capacity'] )
 #подсчет заряда
             if len(df) > 1:
                 df.loc[j, 'charge'] = (abs(df.loc[j, 'current']) + abs(df.loc[j-1, 'current']))*(df.loc[j, 'time']-df.loc[j-1, 'time'])/2
                 #sum_capacity1 = sum_capacity1 + (df.loc[j, 'current'] + df.loc[j-1, 'current'])*(df.loc[j, 'potential'] - df.loc[j-1, 'potential'])
-                worksheet.write(j, col+5, df.loc[j, 'charge'] )
+                worksheet.write(row, col+5, df.loc[j, 'charge'] )
 
                 if df.loc[j-1, 'current']>=0 and df.loc[j, 'current'] <= df['current'].max():
                     sum_capacity2 = sum_capacity2 + df.loc[j, 'charge']/(2 * calc.input_values()[1])
@@ -180,7 +180,7 @@ with open(path, 'r') as file:
                     sum_capacity2 = sum_capacity2 + df.loc[j, 'charge']/(2 * calc.input_values()[1])  
             row +=1
             j=j+1
-        if line1 == '':
+        if line1 == '': 
             break 
 #создание xls
 
