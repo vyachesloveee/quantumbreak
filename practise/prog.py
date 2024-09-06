@@ -104,6 +104,13 @@ class Calculations:
         return average_m, voltage
 charge = 0
 sum_capacity = 0
+<<<<<<< HEAD
+
+
+with open(path, 'r', encoding="cp1252") as file:
+    flag = 0
+    while flag == 0:
+=======
 sum_capacity1 = 0
 sum_capacity2 = 0
 time = 0
@@ -113,6 +120,7 @@ f=0
 with open(path, 'r') as file:
     flag = 0 
     while f < 1:
+>>>>>>> origin
         line = file.readline()
         calc = Calculations(line, insertion[0], insertion[1], insertion[2])
         mode = calc.work_mode()[0]
