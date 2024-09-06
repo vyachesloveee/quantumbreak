@@ -97,7 +97,7 @@ temp_array = [0, 0, 0, 0, 0]
 sum_capacity = 0
 
 
-with open(path, 'r') as file:
+with open(path, 'r', encoding="cp1252") as file:
     flag = 0
     while flag == 0:
         line = file.readline()
