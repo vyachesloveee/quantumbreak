@@ -35,5 +35,5 @@ exe = EXE(
     target_arch=None,
     codesign_identity=None,
     entitlements_file=None,
-    icon=['Z:\\quantumbreak\\practise\\mercury.ico'],
+    icon=['mercury.ico'],
 )
