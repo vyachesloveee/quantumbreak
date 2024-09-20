@@ -5,6 +5,9 @@
 \usepackage{mathrsfs}
 \usepackage{geometry}
 \usepackage{graphicx}
+\usepackage{pgfplots} 
+\pgfplotsset{ every non boxed x axis/.append style={x axis line style=-},
+     every non boxed y axis/.append style={y axis line style=-}}
 \geometry{
   a4paper,
   top=25mm, 
@@ -127,7 +130,23 @@
         \begin{equation}
             \hat{H} = E \ket{1}\bra{1}, 
         \end{equation}
-        $где E \equiv E_1$
+        Где, $E \equiv E_1$
+    \begin{figure}
+        \begin{tikzpicture}
+            \begin{axis}[xmin = 0, xmax = 12, ymin = 0, ymax = 1, 
+                axis lines = middle,
+                anchor=north west,
+                every axis plot/.append style={ultra thick},
+                axis line style={shorten >=-10pt, shorten <=-10pt},
+                xlabel = время, ylabel = вероятность,
+                x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
+                y label style={at={(axis description cs:-0.1,.5)},rotate=90,anchor=south}]
+                \addplot[color = red, samples = 1000, domain=0:100]{0.4*(sin(deg(x - pi/2)) + 1)};
+                \addplot[color = blue, samples = 1000, domain=0:100]{0.4*cos(deg(x)) + 0.6};
+            \end{axis}
+        \end{tikzpicture}
+        \caption{Распределение вероятности между двумя кубитами}
+    \end{figure}
     \end{document}
 
     
