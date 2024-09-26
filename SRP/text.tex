@@ -6,6 +6,8 @@
 \usepackage{geometry}
 \usepackage{graphicx}
 \usepackage{pgfplots} 
+\usepackage{wrapfig}
+\usepackage{caption}
 \pgfplotsset{ every non boxed x axis/.append style={x axis line style=-},
      every non boxed y axis/.append style={y axis line style=-}}
 \geometry{
@@ -72,9 +74,9 @@
         \end{equation}
 
         где $p_i$ является вероятностью нахождения состояния $\psi_i$, а $\ket{\psi_i}\bra{\psi_i}$ --- соответствующий оператор проекции.
-        След матрицы плотности равен 1 по условию нормировки (tr[$\rho$]=1), a сама матрица должна быть положительна, 
+        След матрицы плотности равен 1 по условию нормировки (Tr[$\rho$]=1), a сама матрица должна быть положительна, 
         по определению вероятности ($\rho > 1$). \\
-        В силу утверждения (4) случае если $tr[\rho^2] = tr[\rho] = 1$ мы считаем состояние чистым. В случае $tr[\rho^2] < 1$ состояние смешанное.
+        В силу утверждения (4) случае если $Tr[\rho^2] = Tr[\rho] = 1$ мы считаем состояние чистым. В случае $tr[\rho^2] < 1$ состояние смешанное.
         Матрица плотности представляет собой квадратную матрицу размерности $N \times N$, где N --- количество базисных векторов соответствующего 
         Гильбертова пространства.
         \\ \\
@@ -119,34 +121,46 @@
             Постулат 4. Пространство состояний составной системы, состоящей из N числа подсистем, является тензорным произведением всех ее компонентов $\mathscr{H} = \mathscr{H}_1  \otimes  \mathscr{H}_2  \otimes ... \otimes \mathscr{H}_N$. Если подсистема принадлежащая Гильбертову пространству приготовлена в состоянии $\ket{\psi_i}$, 
             то ее пространство состояний будет иметь вид $\ket{\psi} = \ket{\psi_1}  \otimes  \ket{\psi_2}  \otimes  ... \otimes  \ket{\psi_N}$. В случае составной системы ее конечное смешанное состояние будет иметь вид $\rho = \rho_1  \otimes  \rho_2  \otimes ... \otimes \rho_N$. Взаимозависимые состояния зовуться запутанными.
         \end{itshape}
-        \section{Описание эволюции двухуровневой системы во времени}
-        Пусть $\ket{0}$ и $\ket{1}$ являются собственными состояниями Гамильтониана $\hat{H}$. Тогда эволюция изолированной системы состоящей из одного кубита будет описываться 
         \\
+        \\
+        Пусть существует система $\mathscr{H} = \mathscr{H}_\alpha \otimes \mathscr{H}_\beta$. Для описания состояния подсистемы $\alpha$ необходимо определить матрицу плотности соответствующую этой подсистеме $\rho_\alpha$. Для этого запишем матрицу плотности системы 
         \begin{equation}
-            \hat{H} = E_0 \ket{0}\bra{0} + E_1 \ket{1}\bra{1}
+            \rho = \left[\sum_{i,j,k,l} \ket{\alpha_i}\bra{\alpha_j} \otimes \ket{\beta_k} \bra{\beta_l}\right]
         \end{equation}
-       Если кубит в момент времени t = 0 находился в состоянии $\ket{\psi(0)} = \ket{1}$, состояние в произвольный момент времени t будет соответствовать уравнению $\ket{\psi(t)}=e^{-i\hat{H}t}\ket{1} = e^{-iE_1t}\ket{1}$. 
-       Эволюцию системы в таком случае можно описать добавлением фазы к состоянию получая
-        \begin{equation}
-            \hat{H} = E \ket{1}\bra{1}, 
-        \end{equation}
-        Где, $E \equiv E_1$
-    \begin{figure}
+        Заметим, что если взять след матрицы по базису
+        \newpage
+        \section{Описание эволюции двухуровневой системы во времени}
+
+    \begin{wrapfigure}{r}{0.5\textwidth}
         \begin{tikzpicture}
-            \begin{axis}[xmin = 0, xmax = 12, ymin = 0, ymax = 1, 
+            \begin{axis}[
+                width = 0.5\textwidth,
+                xmin = 0, xmax = 12, ymin = 0, ymax = 1, 
                 axis lines = middle,
                 anchor=north west,
                 every axis plot/.append style={ultra thick},
-                axis line style={shorten >=-10pt, shorten <=-10pt},
+                axis line style={shorten >=-15pt, shorten <=-15pt},
                 xlabel = время, ylabel = вероятность,
                 x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
                 y label style={at={(axis description cs:-0.1,.5)},rotate=90,anchor=south}]
-                \addplot[color = red, samples = 1000, domain=0:100]{0.4*(sin(deg(x - pi/2)) + 1)};
-                \addplot[color = blue, samples = 1000, domain=0:100]{0.4*cos(deg(x)) + 0.6};
+                \addplot[color = cyan, samples = 1000, domain=0:12]{0.4*(sin(deg(x - pi/2)) + 1)};
+                \addplot[color = orange, samples = 1000, domain=0:12]{0.4*cos(deg(x)) + 0.6};
             \end{axis}
         \end{tikzpicture}
+        \captionsetup{justification= centering, margin = 0.1 cm}
         \caption{Распределение вероятности между двумя кубитами}
-    \end{figure}
+    \end{wrapfigure}
+    Пусть $\ket{0}$ и $\ket{1}$ являются собственными состояниями Гамильтониана  $\hat{H}$. Тогда эволюция изолированной системы состоящей из одного кубита будет описываться 
+    \\
+    \begin{equation}
+        \hat{H} = E_0 \ket{0}\bra{0} + E_1 \ket{1}\bra{1}
+    \end{equation}
+   Если кубит в момент времени t = 0 находился в состоянии $\ket{\psi(0)} = \ket{1}$, состояние в произвольный момент времени t будет соответствовать уравнению $\ket{\psi(t)}=e^{-i\hat{H}t}\ket{1} = e^{-iE_1t}\ket{1}$. 
+   Эволюцию системы в таком случае можно описать добавлением фазы к состоянию получая
+    \begin{equation}
+        \hat{H} = E \ket{1}\bra{1}, 
+    \end{equation}
+    Где, $E \equiv E_1$
     \end{document}
 
     
