@@ -125,9 +125,14 @@
         \\
         Пусть существует система $\mathscr{H} = \mathscr{H}_\alpha \otimes \mathscr{H}_\beta$. Для описания состояния подсистемы $\alpha$ необходимо определить матрицу плотности соответствующую этой подсистеме $\rho_\alpha$. Для этого запишем матрицу плотности системы 
         \begin{equation}
-            \rho = \left[\sum_{i,j,k,l} \ket{\alpha_i}\bra{\alpha_j} \otimes \ket{\beta_k} \bra{\beta_l}\right]
+            \rho = \sum_{i,j,k,l} \ket{\alpha_i}\bra{\alpha_j} \otimes \ket{\beta_k} \bra{\beta_l}
         \end{equation}
-        Заметим, что если взять след матрицы по базису
+        Заметим, что если взять след матрицы по базису $\beta$, то, воспользовавшись свойством следа, получим
+
+        \begin{equation}
+            Tr_\beta[\rho] = Tr_\beta\left[\sum_{i,j,k,l} \ket{\alpha_i}\bra{\alpha_j} \otimes \ket{\beta_k} \bra{\beta_l}\right] =\sum_{i,j}\ket{\alpha_i}\bra{\alpha_j} Tr\left[\sum_{k,l} \ket{\beta_k} \bra{\beta_l}\right] \equiv \rho_\alpha,
+        \end{equation}
+        $Tr_\beta[\rho]$ принято называть частичным следом по базису $\beta$, а $\rho_\alpha$ --- редуцированной матрицей плотности.
         \newpage
         \section{Описание эволюции двухуровневой системы во времени}
 
@@ -161,6 +166,7 @@
         \hat{H} = E \ket{1}\bra{1}, 
     \end{equation}
     Где, $E \equiv E_1$
+
     \end{document}
 
     
