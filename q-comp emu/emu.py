@@ -75,13 +75,20 @@ def observe(v):
   return 
 
 #тест
-'''
-a = np.kron(up, up)
-a = apply(a, H(), I())
-a = apply(a, H(), I())
+
+a = np.kron(down, up)
+a = np.kron(a, down)
+a = np.kron(a, down)
+a = apply(a, X(), I(), X(), I())
+a = apply(a, I(), I(), SWAP())
+a = apply(a, TOFF(), I())
+a = apply(a, I(), I(), SWAP())
+a = apply(a, CX(), I(), I())
+a = apply(a, I(), TOFF())
+a = apply(a, I(), CX(), I())
+a = apply(a, CX(), I(), I())
 print(a)
 observe(a)
-'''
 
-a = '0 0 0'
-print(a.split())
+print(a)
+
