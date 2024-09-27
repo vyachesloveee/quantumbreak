@@ -71,12 +71,12 @@ def apply(v, *gates):
 def observe(v):
   v2 = np.absolute(v) ** 2
   c = np.random.choice(v.size, 1, p=v2)
-  print('you observed the state number', c[0] + 1)
+  print('you observed the state number', c[0])
   return 
 
 #тест
 
-a = np.kron(down, up)
+a = np.kron(up, up)
 a = np.kron(a, down)
 a = np.kron(a, down)
 a = apply(a, X(), I(), X(), I())
@@ -90,5 +90,4 @@ a = apply(a, CX(), I(), I())
 print(a)
 observe(a)
 
-print(a)
 
