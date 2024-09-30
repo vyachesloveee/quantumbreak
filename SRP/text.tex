@@ -36,7 +36,7 @@
         (\ref{link name}), рассматривоемое в данной работе, является уравнением матрицы плотности, описывающим ее эволюцию.
 
         \begin{equation}\label{link name}
-            \partial_t \hat{\rho} = -\frac{i}{\hbar} [\hat{H},\hat{\rho}] + \sum_i \gamma_i ( L_{i} \rho L^{\dagger} - \frac{1}{2} [L_{i}^{\dagger} L_i , \hat{\rho}]) 
+            \partial_t \rho = -\frac{i}{\hbar} [\hat{H},\rho] + \sum_i \gamma_i ( \hat{L}_{i} \rho \hat{L}^{\dagger} - \frac{1}{2} [\hat{L}_{i}^{\dagger} \hat{L}_i , \rho]) 
         \end{equation}
 
     \end{abstract}
@@ -107,7 +107,7 @@
         \\
 
         \begin{equation}
-            \frac{d}{dt} \ket{\psi(t)} = -i \hbar \hat{H} \ket{\psi(t)}
+            \frac{d}{dt} \ket{\psi(t)} = -\frac{i}{ \hbar} \hat{H} \ket{\psi(t)}
         \end{equation}
         \\
 
@@ -140,7 +140,31 @@
                 \ket{\psi(t)} = \hat{U}(t)\ket{\psi(0)}
             \end{equation}
         \end{itshape}
-       По определению $\rho(t) = \sum_{i} p_i \ket{\psi_i(t)} \bra{\psi_i(t)}$
+        \newpage
+       По определению 
+       \begin{equation}
+        \rho(t) = \sum_{i} p_i \ket{\psi_i(t)} \bra{\psi_i(t)}
+       \end{equation}
+       тогда,
+       \begin{equation}
+        \rho(t) = \sum_{i} p_i \ket{\psi_i(t)} \bra{\psi_i(t)} = \sum_{i} p_i \hat{U}(t)\ket{\psi_i(0)}\bra{\psi_i(0)}\hat{U}^{\dagger}(t) = \hat{U}(t)\rho(0)\hat{U}^\dagger(t)
+       \end{equation}
+
+       Деференцируя полученное выражение (12) по времени по правули (9) получим
+       \begin{equation}
+        \begin{aligned}
+        d_t \rho(t) &= \sum_{i} p_i \left[d_t \ket{\psi(t)} \bra{\psi(t)} + \ket{\psi(t)} d_t\bra{\psi(t)} \right]\\
+                    &=\sum_{i} p_i\left[ -\frac{i}{\hbar} \hat{H} \ket{\psi(t)}\bra{\psi(t)} + \ket{\psi(t)}\bra{\psi(t)} \frac{i}{\hbar}\hat{H}\right]\\
+                    &=-\frac{i}{\hbar} \left[\hat{H}\rho(t) - \rho(t) \hat{H}\right] = -\frac{i}{\hbar}\left[\hat{H},\rho(t)\right] \equiv \hat{L}\rho(t)
+        \end{aligned}
+       \end{equation}
+       Полученное Уравнение называют уравнением фон Неймана или квантовым уравнением Лиувилля. Оператор $\hat{L}$ называют супероператором Лиувилля или просто Лиувиллианом.
+       В случае, если Гамильтониан системы $\hat{H}$ не зависит от времени решение такого уравнения фон Неймана можно записать в виде
+       \begin{equation}
+        \rho(t) = \hat{U}(t) \ \rho(0) \ \hat{U}^\dagger(t),
+       \end{equation}
+       где $\hat{U}(t) = e^{\frac{-i(t-t_0)\hat{H}}{\hbar}}$
+       
         \newpage
         \section{Описание эволюции двухуровневой системы во времени}
 
