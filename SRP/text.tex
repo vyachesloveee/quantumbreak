@@ -180,8 +180,8 @@
                 xlabel = время, ylabel = вероятность,
                 x label style={at={(axis description cs:0.5,-0.1)},anchor=north},
                 y label style={at={(axis description cs:-0.1,.5)},rotate=90,anchor=south}]
-                \addplot[color = cyan, samples = 1000, domain=0:12]{0.4*(sin(deg(x - pi/2)) + 1)};
-                \addplot[color = orange, samples = 1000, domain=0:12]{0.4*cos(deg(x)) + 0.6};
+                \addplot[color = cyan, samples = 1000, domain=0:12]{((sin(0.4*deg(x)))^2)/1.2};
+                \addplot[color = orange, samples = 1000, domain=0:12]{((cos(0.4*deg(x)))^2+0.2)/1.2};
             \end{axis}
         \end{tikzpicture}
         \captionsetup{justification= centering, margin = 0.1 cm}
@@ -193,12 +193,18 @@
     \begin{equation}
         \hat{H} = E_0 \ket{0}\bra{0} + E_1 \ket{1}\bra{1}
     \end{equation}
-   Если кубит в момент времени t = 0 находился в состоянии $\ket{\psi(0)} = \ket{1}$, состояние в произвольный момент времени t будет соответствовать уравнению $\ket{\psi(t)}=e^{-i\hat{H}t}\ket{1} = e^{-iE_1t}\ket{1}$. 
+   Если кубит в момент времени t = 0 находился в состоянии $\ket{\psi(0)} = \ket{1}$, состояние в произвольный момент времени t будет соответствовать уравнению $\ket{\psi(t)}=e^{-i\hat{H}t}\ket{1} \equiv e^{-iE_1t}\ket{1}$. 
    Эволюцию системы в таком случае можно описать добавлением фазы к состоянию получая
     \begin{equation}
         \hat{H} = E \ket{1}\bra{1}, 
     \end{equation}
-    где, $E \equiv E_1$. Подставив выражеие (18) в уравнение фон Неймана (15), мы получим график распределение вероятности (Рис. 1)
+    где, $E \equiv E_1$. Можем добавить в модель описание перехода между двумя состояниями кубита, записав в полученный Гамильтониан частоту переход $\Omega$.
+   \\\\
+    \begin{equation}
+        \hat{H} = E \ket{1}\bra{1} + \Omega(\ket{0}\bra{1} + \ket{1} \bra{0})
+    \end{equation}
+    \\
+    Подставив выражеие (19) в уравнение фон Неймана (15), мы получим график распределение вероятности (Рис. 1).
 
     \end{document}
 
