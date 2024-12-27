@@ -76,7 +76,7 @@ def observe(v):
 
 #тест
 
-a = np.kron(down, down)
+a = np.kron(up, up)
 a = np.kron(a, down)
 a = np.kron(a, down)
 print(a)
